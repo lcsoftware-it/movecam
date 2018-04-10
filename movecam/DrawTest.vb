@@ -624,7 +624,8 @@ Public Class DrawTest
             'Else
             '   If ProjectArea.Width > 2000 Then Exit Sub 'maximum 2000?
             'End If
-            newZoom = setZoom(McrjSpinControl1.CurrentVal / 100 + e.Delta / 10000) * 100
+
+            newZoom = setZoom(Math.Round(McrjSpinControl1.CurrentVal / 100 + e.Delta / 10000, 2)) * 100
             McrjSpinControl1.CurrentVal = newZoom
 
         End If
@@ -633,5 +634,31 @@ Public Class DrawTest
 
     Private Sub ProjectArea_MouseEnter(sender As Object, e As EventArgs) Handles ProjectArea.MouseEnter
         ProjectArea.Focus()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Dim newZoom As Double
+
+        newZoom = setZoom(McrjSpinControl1.CurrentVal / 100 + 0.1) * 100
+
+        McrjSpinControl1.CurrentVal = newZoom
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        Dim newZoom As Double
+
+        newZoom = setZoom(McrjSpinControl1.CurrentVal / 100 - 0.1) * 100
+
+        McrjSpinControl1.CurrentVal = newZoom
+
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Dim newZoom As Double
+
+        newZoom = setZoom(1) * 100
+
+        McrjSpinControl1.CurrentVal = newZoom
+
     End Sub
 End Class

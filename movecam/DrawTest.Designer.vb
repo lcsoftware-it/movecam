@@ -38,6 +38,9 @@ Partial Class DrawTest
         Me.Button7 = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.McrjSpinControl1 = New McrjSpin.mcrjSpinControl()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
@@ -250,6 +253,9 @@ Partial Class DrawTest
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.Button13)
+        Me.TabPage1.Controls.Add(Me.Button9)
+        Me.TabPage1.Controls.Add(Me.Button5)
         Me.TabPage1.Controls.Add(Me.McrjSpinControl1)
         Me.TabPage1.Controls.Add(Me.Button12)
         Me.TabPage1.Controls.Add(Me.Button11)
@@ -263,12 +269,48 @@ Partial Class DrawTest
         Me.TabPage1.Text = "Job"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
+        'Button13
+        '
+        Me.Button13.BackgroundImage = Global.movecam.My.Resources.Resources.zoomOut
+        Me.Button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button13.Location = New System.Drawing.Point(226, 5)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(40, 41)
+        Me.Button13.TabIndex = 6
+        Me.Button13.UseMnemonic = False
+        Me.Button13.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.BackgroundImage = Global.movecam.My.Resources.Resources.zoomReset
+        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button9.Location = New System.Drawing.Point(182, 5)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(40, 41)
+        Me.Button9.TabIndex = 5
+        Me.Button9.UseMnemonic = False
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.BackgroundImage = Global.movecam.My.Resources.Resources.zoomIn
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button5.Location = New System.Drawing.Point(138, 5)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(40, 41)
+        Me.Button5.TabIndex = 4
+        Me.Button5.UseMnemonic = False
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'McrjSpinControl1
         '
         Me.McrjSpinControl1.CurrentVal = 100.0R
         Me.McrjSpinControl1.firstInterval = 500
         Me.McrjSpinControl1.followingIntervals = 50
-        Me.McrjSpinControl1.Location = New System.Drawing.Point(139, 16)
+        Me.McrjSpinControl1.Location = New System.Drawing.Point(5, 51)
         Me.McrjSpinControl1.MaxVal = 500.0R
         Me.McrjSpinControl1.MinVal = 0R
         Me.McrjSpinControl1.Name = "McrjSpinControl1"
@@ -1117,4 +1159,7 @@ Partial Class DrawTest
     Friend WithEvents tsbPoint As ToolStripButton
     Friend WithEvents txtZoom As TextBox
     Friend WithEvents McrjSpinControl1 As McrjSpin.mcrjSpinControl
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button13 As Button
+    Friend WithEvents Button9 As Button
 End Class

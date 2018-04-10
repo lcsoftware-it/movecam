@@ -44,7 +44,7 @@
         Pcurrent.X = Pinit.X + (1 - newDelta) * kx
         Pcurrent.Y = Pinit.Y - (1 - newDelta) * ky
         delta = newDelta
-        Debug.Print(CStr(Pcurrent.X) + " " + CStr(delta))
+
     End Sub
 
 
