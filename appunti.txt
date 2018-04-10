@@ -1,0 +1,33 @@
+Percorso di iniezione = 
+ListaPuntiDiControllo + ListaPuntiDiIniezione
+
+Punto di controllo
+punto con coordinate x,y e tipo (punto di controllo normale, centro, ecc...)
+
+Punto di Iniezione
+punto con coordinate x,y e tipo (inizio iniezione, fine iniezione, continua iniezione) durata, ritardo apertura, trattofinale, discesa, rialzo, velocità
+
+
+
+
+'SP:[colore];[ritardo_apertura];[tratto_finale];[discesa];[rialzo];F[velocità]X[ascissa]Y[ordinata];etc
+
+TIPOLOGIE PATH DI INIEZIONE
+PUNTO
+Vi è un solo punto di iniezione che coincide con quello di controllo
+
+SPEZZATA
+Lista di punti di iniezione, che coincidono con quelli di controllo
+
+ARCO
+Vi sono 3 punti di controllo, il primo e l'ultimo coincidono con il primo e ultimo di iniezione. Centro e raggio vengono ustai (eventualmente) solo come elementi grafici
+
+B-SPLINE TIPO1
+Vi sono n punti di controllo, il primo e l'ultimo coincidono con il primo e ultimo di iniezione.
+
+B-SPLINE TIPO2
+Vi sono n punti di controllo, il primo e l'ultimo coincidono con il primo e ultimo di iniezione. A differenza delle b-spline di tipo1, in questo caso i punti di controllo
+appartengono al tracciato della spline
+
+MULTIPATH
+E' l'unione di piu' tipi di path precedenti. 
