@@ -29,8 +29,8 @@ Public Class DrawTest
     Private a As Arco
     Private inj As Injector
     Private dwState As drawingState
-    Private Const MAX_ZOOM As Double = 10.0
-    Private Const MIN_ZOOM As Double = 0.05
+    Private MIN_ZOOM As Double = My.Settings.minZoom
+    Private MAX_ZOOM As Double = My.Settings.maxZoom
 
     Private Sub ProjectArea_Paint(sender As Object, e As PaintEventArgs) Handles ProjectArea.Paint
 

@@ -40,6 +40,7 @@ Partial Class Main
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -241,6 +242,15 @@ Partial Class Main
         Me.Button6.Text = "CTRL AXIS + CAMERA"
         Me.Button6.UseVisualStyleBackColor = False
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(65, 227)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 20
+        Me.Button2.Text = "Playground"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -248,6 +258,7 @@ Partial Class Main
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1132, 647)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button5)
@@ -291,4 +302,5 @@ Partial Class Main
     Friend WithEvents Button5 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents Button2 As Button
 End Class

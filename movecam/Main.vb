@@ -58,4 +58,7 @@ Public Class Main
         needles.Add(New Needle("3.00"))
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+    End Sub
 End Class
