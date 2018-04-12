@@ -84,6 +84,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration.vb" />
     <Compile Include="InjectorGUI.Designer.vb">
       <DependentUpon>InjectorGUI.vb</DependentUpon>
     </Compile>

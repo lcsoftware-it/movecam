@@ -614,20 +614,12 @@ Public Class DrawTest
 
     End Sub
 
-    Private Sub ProjectAreax_MouseWheel(sender As System.Object,
-                             e As MouseEventArgs) Handles ProjectArea.MouseWheel
+    Private Sub ProjectAreax_MouseWheel(sender As System.Object, e As MouseEventArgs) Handles ProjectArea.MouseWheel
         Dim newZoom As Double
 
         If e.Delta <> 0 Then
-            'If e.Delta <= 0 Then
-            ' If ProjectArea.Width < 500 Then Exit Sub 'minimum 500?
-            'Else
-            '   If ProjectArea.Width > 2000 Then Exit Sub 'maximum 2000?
-            'End If
-
             newZoom = setZoom(Math.Round(McrjSpinControl1.CurrentVal / 100 + e.Delta / 10000, 2)) * 100
             McrjSpinControl1.CurrentVal = newZoom
-
         End If
 
     End Sub
@@ -640,7 +632,6 @@ Public Class DrawTest
         Dim newZoom As Double
 
         newZoom = setZoom(McrjSpinControl1.CurrentVal / 100 + 0.1) * 100
-
         McrjSpinControl1.CurrentVal = newZoom
     End Sub
 
